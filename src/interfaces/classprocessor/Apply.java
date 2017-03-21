@@ -1,7 +1,7 @@
 package interfaces.classprocessor;
 /**
- * 内容	：完全解耦
- * 说明	：
+ * 内容	：9.3-完全解耦
+ * 说明	：设计模式->策略模式
  * 作者	：zhouyf
  * 日期	：2017.3.21
  * 
