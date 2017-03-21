@@ -10,6 +10,13 @@ class Processor {
 	return ((String)input).toUpperCase();
     }
 }
+
+class Upcase extends Processor {
+    String process(Object input) {	// Covariant return 覆盖基类的方法
+	return ((String)input).toUpperCase();
+    }
+}
+
 public class Apply {
 
     public static void main(String[] args) {
