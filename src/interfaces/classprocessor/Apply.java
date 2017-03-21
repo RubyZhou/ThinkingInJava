@@ -12,7 +12,7 @@ class Processor {
 }
 
 class Upcase extends Processor {
-    String process(Object input) {	// Covariant return 覆盖基类的方法
+    String process(Object input) {	// Covariant return 瑕嗙洊鍩虹被鏂规硶
 	return ((String)input).toUpperCase();
     }
 }
