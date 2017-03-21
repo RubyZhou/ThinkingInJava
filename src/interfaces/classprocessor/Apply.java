@@ -29,11 +29,12 @@ class Downcase extends Processor {
 }
 
 class Splitter extends Processor {
-    String process(Object input){
-	return Arrays.toString(((String)input).split(" "));
+    String process(Object input) {
+	return Arrays.toString(((String)input).split(" ")); 
+		// split 方法将调用他的 String 对象根据参数边界切分成一个个小字符串，返回出 一个 String[] 数组
+						
     }
 }
-
 
 public class Apply {
     
