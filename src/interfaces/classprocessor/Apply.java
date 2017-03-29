@@ -11,6 +11,7 @@ import static util.Print.*;
 
 class Processor {
     public String name() {
+	//有一个name 方法获取类名
 	return getClass().getSimpleName();
     }
     Object process(Object input) { return input; }
