@@ -7,7 +7,6 @@ package innerclasses;
  * 
  */
 
-
 public class Sequence {
     private Object[] items;
     private int next = 0;
