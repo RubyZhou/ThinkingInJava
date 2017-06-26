@@ -16,7 +16,7 @@ public class RandomWords implements Readable {
     
     @Override
     public int read(CharBuffer cb)  {
-	// TODO Auto-generated method stub
+	
 	if (count-- == 0)
 	    return -1;
 	cb.append(capitals[rand.nextInt(capitals.length)]);
