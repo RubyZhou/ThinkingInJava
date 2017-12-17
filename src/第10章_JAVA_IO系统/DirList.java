@@ -10,7 +10,7 @@ import java.io.*;
 public class DirList {
 	public static void main(String[] args) {
 		try {
-			File path = new File(".");
+			File path = new File("D:\\我的文档\\工作\\周报");
 			String[] list;
 			if (args.length == 0)
 				list = path.list();
