@@ -1,3 +1,7 @@
 # 包下的所有类简要说明
 (1) Parcel1.java	：	一个简单的内部类示例
-(2) Parcel2.java	:	
+(2) Parcel2.java	:	通过外部类的一个方法，返回一个内部类的引用
+(3) Sequence.java	:	内部类有对其外围类的所有元素的访问权限
+(4) DotThis.java	:	内部类中使用 .this 其实指的是其外围类
+(5) DotNew.java		:	创建内部类实例的方法
+(6) Parcel3.java	:	应用 .new 来创建内部类实例  <vs.> 之前通过的方法:设置一个专门的方法来 return new一个内部类对象
