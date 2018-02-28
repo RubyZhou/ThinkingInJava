@@ -1,13 +1,23 @@
 # 包下的所有类简要说明
-(1) Parcel1.java	：	一个简单的内部类示例
-(2) Parcel2.java	:	通过外部类的一个方法，返回一个内部类的引用
+(1)	Parcel1.java	:	一个简单的内部类示例
+(2)	Parcel2.java	:	通过外部类的一个方法，返回一个内部类的引用
 (3) Sequence.java	:	内部类有对其外围类的所有元素的访问权限
-(4) DotThis.java	:	内部类中使用 .this 获得外部类对象实例, 其实指的是外围类而非内部类
-(5) DotNew.java		:	创建内部类实例的方法
-(6) Parcel3.java	:	应用 .new 来创建内部类实例  <vs.> 之前通过的方法:设置一个专门的方法来 return new一个内部类对象
+(4) DotThis.java	:	使用 .this
+(5) DotNew.java		:	使用 .new
+(6) Parcel3.java	:	使用 .new 来创建内部类实例  <vs.> 之前通过的方法:设置一个专门的方法来 return new一个内部类对象
 (7) Destination.java:	(8)的辅助接口
 (8) Contents.java	:	(8)的辅助接口
 (9) TestParcel.java	:	private / protected 类型的内部类访问控制
+(10)Parcel5.java	:	一个定义在方法中的内部类，在外部类的方法中创建内部类
+(11)Parcel6.java	:	一个定义在作用域中的内部类，此作用域在方法内部
+(12)Parcel7.java	:	一个匿名内部类，创建一个继承自接口的实例，返回实例时才进行定义 
+(13)Parcel8.java	:	一个匿名内部类，但所继承的基类带有构造函数，同时内部类重写了基类的其他方法
+(14)Warpping.java	:	Parcel8.java 的辅助类，当作接口来使用
+(15)Parcel9.java	:	验证匿名内部类所访问的外部变量必须是 final 的，否则报错
+(16)AnonymousConstructor.java	: 匿名内部类自身的构造方法实现，在域中使用 {}
+(17) Parcel10.java	:	带实例初始化的匿名内部类
+
+
 
 
 
