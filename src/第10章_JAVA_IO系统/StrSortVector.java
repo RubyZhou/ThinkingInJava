@@ -2,9 +2,9 @@
 // Automatically sorted Vector that
 // accepts and produces only Strings
 package 第10章_JAVA_IO系统;
-import copy_第8章_对象的容纳.*;
-
 import java.util.*;
+
+import 第8章_对象的容纳_copy.*;
 
 /**
  * 
