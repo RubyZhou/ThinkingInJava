@@ -23,7 +23,7 @@
 (20) Parcel11.java	:	嵌套类 demo
 (21) ClassInInterface.java	: 嵌套类放在 interface 内部实现, 创建实例调用接口方法的方式 : 内部类().内部类方法()
 (22) TestBed.java	:	代替main()的测试用内部类
-
+(23) MultiNestingAccess.java	: 无论嵌套几层，内部类都可以访问外部类所有成员
 
 
 =================== 中英翻译 =====================
