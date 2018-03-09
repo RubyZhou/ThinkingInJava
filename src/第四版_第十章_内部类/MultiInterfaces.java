@@ -6,6 +6,9 @@ package 第四版_第十章_内部类;
  * Date		: 2018年3月9日
  * Version	: 1.0 
  * Desc		: 多重继承：接口方式实现  vs. 内部类方式
+ * 				调用实例区别：
+ * 						takesA(y);
+ *						tabkeB(y.makeB()); => 匿名内部类要调用一个方法
  * History	:
  */
 
