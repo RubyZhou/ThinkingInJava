@@ -33,12 +33,9 @@
 (26) Callbacks.java				: 闭包和回调 
 
 --------------------------------------------(内部类在控制框架中的应用)---------------------------------------------
-(27) Event.java					: 控制事件的接口. 事件调度基本框架 : 开始 -> 准备 -> 执行 
-(28) TestNanoTime.java			: 测试 (27) 中的  System.nanoTime()
-
-
-
-() TestNanoTime.java	: 测试 System.nanoTime();	=>
+(27) Event.java			: 控制事件的接口. 事件调度基本框架 : 开始 -> 准备 -> 执行 
+(28) TestNanoTime.java	: 测试 (27) 中的  System.nanoTime()
+(29) Controller.java	: 事件调度基本框架 : 运行框架
 
 
 
