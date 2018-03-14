@@ -44,6 +44,8 @@
 (33) BigEgg.java		: 内部类可以被覆盖嘛？不能。 即使继承，但是也有各自的 namespace。
 (34) BigEgg2.java		: 需要继承外围类的内部类时，可以特别指定
 
+(35) LocalInnerClass.java	: 局部内部类, 即在外部类的方法中定义内部类  <vs.> 匿名内部类
+
 
 
 
