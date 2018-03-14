@@ -25,34 +25,45 @@ import util.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 事件调度框架:
+ * 		(1) 有一个事件队列 List<Event> eventList
+ * 		(2) 添加事件	:	像队尾添加输入的事件
+ * 		(3)	后台运行	:	后台运行监控，队列里包含
+ * 
+ * 调度基本逻辑:
+ * 		先向队列数组里装数据 -> 监控跑起来
+ */
 public class Controller {
 
-	/* 【1】创建一个List<Event> 变量，用 ArrayList 实现 */
+	/* 【1】事件队列容器
+	 * 	创建一个List<Event> 变量，用 ArrayList 实现 */
 	private List<Event> eventList = new ArrayList<Event>();
 	
 	/*
-	 * 【2】添加功能
+	 * 【2】向队列中装载事件
 	 */
 	public void addEvent(Event c) {
 		eventList.add(c);
 	}
 	/*
-	 * 【3】添加完毕后，循环处理事件
+	 * 【3】控制器在后台开启：功能就是在事件队列里不断的检查 准备好的 事件，然后触发他的 action
 	 * 		【IDEA】：做成线程池进行处理？
-	 * 		处理逻辑：遍历 eventList -> 循环取出 Event -> 准备完毕就执行 -> 移除处理完的事项
 	 * 		TIPS：这个框架并不关心 Event 到底做了什么  => 将变化的事物分离
 	 */
 	public void run() {
+		/* 【4】队列 里包含未处理的事件 ，继续监控; 否则,结束。 */
 		while (eventList.size() > 0) {
-			/* 【4】寻找准备就绪的 Event， 将 eventList*/
+			/* 新建一个空的队列，将现有的队列装进去后，从头到尾遍历一遍 */
 			for (Event e : new ArrayList<Event>(eventList)) {
+				/* 遍历过程将已经 ready 的事件"翻牌" (触发他的action后就从队列中移除)。再从头检查一遍 */
 				if (e.ready()) {
 					System.out.println(e);
 					e.action();
 					eventList.remove(e);
-				}	/* if */
-			}	/* for */
-		} /* while */
+				}
+			}
+		}
 	}
 	
 	/**
