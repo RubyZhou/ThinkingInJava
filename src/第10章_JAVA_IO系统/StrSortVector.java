@@ -4,7 +4,7 @@
 package 第10章_JAVA_IO系统;
 import java.util.*;
 
-import 第8章_对象的容纳_copy.*;
+
 
 /**
  * 
