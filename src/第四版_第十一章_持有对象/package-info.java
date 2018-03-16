@@ -11,4 +11,5 @@ package 第四版_第十一章_持有对象;
 /*
  * (1) ApplesAndOrangesWithoutGenerics.java	: 未使用泛型的 ArrayList
  * (2) ApplesAndOrangesWithGenerics.java	: 使用了泛型的ArrayList
+ * (3) GenericsAndUpcasting.java			: 带向上转型的 泛型 ArrayList
  */
