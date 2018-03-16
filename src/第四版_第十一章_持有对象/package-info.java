@@ -9,5 +9,6 @@
 package 第四版_第十一章_持有对象;
 
 /*
- * (1) ApplesAndOrangesWithoutGenerics.java	: 【证明】向 ArrayList 放入不同类型的变量会导致异常
+ * (1) ApplesAndOrangesWithoutGenerics.java	: 未使用泛型的 ArrayList
+ * (2) ApplesAndOrangesWithGenerics.java	: 使用了泛型的ArrayList
  */

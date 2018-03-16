@@ -5,7 +5,8 @@ package 第四版_第十一章_持有对象;
  * Author	: zhouyf
  * Date		: 2018年3月15日 
  * Version	: 1.0 
- * Desc		: 【证明】向 ArrayList 放入不同类型的变量会导致异常
+ * Desc		: 未使用泛型的 ArrayList
+ * 			【证明】向 ArrayList 放入不同类型的变量会导致异常
  * 				(1) ArrayList 的基本用法
  * 				(2) @SuppressWarnings("unchecked") -> @开头表示注解，表示抑制 "不受检查的异常" 的警告信息
  * 
