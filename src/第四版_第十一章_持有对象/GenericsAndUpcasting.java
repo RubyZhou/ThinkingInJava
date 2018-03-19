@@ -37,7 +37,5 @@ public class GenericsAndUpcasting {
 		for (Apple c : apples ) {
 			System.out.println(c);
 		}
-
 	}
-
 }
