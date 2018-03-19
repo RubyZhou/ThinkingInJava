@@ -3,7 +3,7 @@
  * Author	: zhouyf
  * Date		: 2018年3月15日
  * Version	: 1.0 
- * Desc		: () package-info.java	: 
+ * Desc		: 十一章，包的简要说明
  * History	:
  */
 package 第四版_第十一章_持有对象;
@@ -13,4 +13,5 @@ package 第四版_第十一章_持有对象;
  * (2) ApplesAndOrangesWithGenerics.java	: 使用了泛型的ArrayList
  * (3) GenericsAndUpcasting.java			: 带向上转型的 泛型 ArrayList
  * (4) SimpleCollection.java				: 简单的序列 Collection 示例
+ * (5) AddingGroups.java					: 添加一组元素的多种方法比较
  */
