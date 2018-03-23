@@ -27,4 +27,5 @@ package 第四版_第十一章_持有对象;
  * 
  * (9) SimpleIterator.java					: 简单的迭代器使用
  * 
+ * (10) CrossContainerIterator.java			: 验证了迭代器统一对容器的访问方式
  */
