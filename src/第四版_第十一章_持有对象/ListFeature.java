@@ -16,10 +16,8 @@ package 第四版_第十一章_持有对象;
  */
 
 import java.util.*;
-
-import 第四版_第十一章_持有对象_辅助类typeinfo.*;
-
 import static util.Print.*;
+import 第四版_第十一章_持有对象_辅助类typeinfo.*;
 
 public class ListFeature {
 
