@@ -31,4 +31,6 @@ package 第四版_第十一章_持有对象;
  * 
  * (11) ListIteration.java					: listIterator  的基本用法，继承自 Iterator
  * 
+ * (12) LinkedListFeatures.java				: LinkedList 的基本特性
+ * 
  */
