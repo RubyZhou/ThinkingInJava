@@ -1,14 +1,5 @@
 package 第四版_第十章_内部类;
 
-/**
- * Function	: Callbacks.java
- * Author	: zhouyf
- * Date		: 2018年3月9日
- * Version	: 1.0 
- * Desc		: 闭包和回调
- * History	:
- */
-
 import static util.Print.*;
 
 /*

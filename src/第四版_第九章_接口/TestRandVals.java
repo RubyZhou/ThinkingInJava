@@ -1,11 +1,4 @@
 package 第四版_第九章_接口;
-/**
- * 内容	：
- * 说明	：
- * 作者	：zhouyf
- * 日期	：2017年5月2日	下午10:43:44
- * 
- */
 import static util.Print.*;
 public class TestRandVals {
 

@@ -1,13 +1,5 @@
 package 第四版_第十章_内部类;
 
-/**
- * Function	: Games.java
- * Author	: zhouyf
- * Date		: 2018年3月5日
- * Version	: 1.0 
- * Desc		: 匿名内部类方式的工厂方法应用实例：匿名内部类在游戏框架中的应用
- * History	:
- */
 import static util.Print.*;
 
 interface Game			{ boolean move(); }

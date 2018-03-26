@@ -1,14 +1,5 @@
 package 第四版_第九章_接口;
 
-/**
- * Function	: Factories.java 
- * Author	: zhouyf
- * Date		: 2018年3月1日
- * Version	: 1.0 
- * Desc		: 工厂方法
- * Thinking	: 对工厂方法的思考 => 解决消费者可有不同的选择，不同的工厂有不同的产品（多对多）
- * History	:
- */
 import static util.Print.*;
 
 /*

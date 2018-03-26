@@ -1,5 +1,7 @@
 package 第四版_第十一章_持有对象;
 
+import static util.Print.*;
+
 /**
  * Function	: ListIteration.java
  * Author	: zhouyf
@@ -10,7 +12,7 @@ package 第四版_第十一章_持有对象;
  */
 
 import java.util.*;
-import static util.Print.*;
+
 import 第四版_第十一章_持有对象_辅助类typeinfo.*;
 
 public class ListIteration {

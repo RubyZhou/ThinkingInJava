@@ -1,15 +1,5 @@
 package 第四版_第十章_内部类;
 
-/**
- * Function	: BigEgg2.java
- * Author	: zhouyf
- * Date		: 2018年3月14日
- * Version	: 1.0 
- * Desc		: 需要继承外围类的内部类时，可以特别指定
- * 			
- * History	:
- */
-
 import static util.Print.*;
 
 class Egg2 {

@@ -33,5 +33,7 @@ package 第四版_第十一章_持有对象;
  * 
  * (12) LinkedListFeatures.java				: LinkedList 的基本特性
  * 
- * (13) Stack.java							: 栈 
+ * (13) Stack.java							: 用 LinkedList 实现 Stack
+ * 
+ * (14) StackCollision.java	: 
  */

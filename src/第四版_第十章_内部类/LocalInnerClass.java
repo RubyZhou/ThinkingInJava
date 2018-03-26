@@ -1,14 +1,5 @@
 package 第四版_第十章_内部类;
 
-/**
- * Function	: LocalInnerClass.java
- * Author	: zhouyf
- * Date		: 2018年3月14日
- * Version	: 1.0 
- * Desc		: 局部内部类, 即在外部类的方法中定义内部类  <vs.> 匿名内部类，外部类方法返回时当场定义
- * History	:
- */
-
 import static util.Print.*;
 
 interface Counter {

@@ -1,5 +1,7 @@
 package 第四版_第十一章_持有对象;
 
+import static util.Print.*;
+
 /**
  * Function	: PrintContainers.java
  * Author	: zhouyf
@@ -10,7 +12,6 @@ package 第四版_第十一章_持有对象;
  */
 
 import java.util.*;
-import static util.Print.*;
 
 
 public class PrintContainers {

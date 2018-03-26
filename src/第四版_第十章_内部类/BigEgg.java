@@ -1,14 +1,5 @@
 package 第四版_第十章_内部类;
 
-/**
- * Function	: BigEgg.java
- * Author	: zhouyf
- * Date		: 2018年3月14日
- * Version	: 1.0 
- * Desc		: 内部类可以被覆盖嘛？不能, 即使继承，但是也有各自的 namespace。
- * History	:
- */
-
 import static util.Print.*;
 
 class Egg {
