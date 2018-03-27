@@ -45,7 +45,8 @@ package 第四版_第十一章_持有对象;
  * (19) UniqueWordsAlphabetic.java			: 按字母顺序排序，不区分大小写
  * 
  * ---------------------------------------- <Map> ---------------------------------------------------
- * (20) Statistics.java						: Map的基本用法测试随机数分布
+ * (20) Statistics.java						: Map的基本用法 > key为 Integer 测试随机数分布
+ * (21) PetMap.java							: Map的基本用法 > key为 String  类型
  * 
  * 
  * 
