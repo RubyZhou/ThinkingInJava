@@ -23,5 +23,4 @@ public class Statistics {
 		}
 		System.out.println(m);
 	}
-
 }
