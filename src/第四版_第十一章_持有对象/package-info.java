@@ -55,6 +55,7 @@ package 第四版_第十一章_持有对象;
  * 
  * ---------------------------------------- <Collection 和 Iterator> ---------------------------------------------------
  * (25) InterfaceVsIterator.java			: 处理容器迭代： Iterator vs. 宽接口 Collection
+ * (26) CollectionSequence.java				: 继承AbstractCollection 不如 使用Iterator的案例
  * 
  * 
  * 
