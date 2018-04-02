@@ -53,9 +53,8 @@ package 第四版_第十一章_持有对象;
  * (23) QueueDemo.java						: LinkedList 实现 Queue
  * (24) PriorityQueueDemo.java				: 优先级队列
  * 
- * 
- * 
- * 
+ * ---------------------------------------- <Collection 和 Iterator> ---------------------------------------------------
+ * (25) InterfaceVsIterator.java			: 处理容器迭代： Iterator vs. 宽接口 Collection
  * 
  * 
  * 
