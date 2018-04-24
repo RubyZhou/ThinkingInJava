@@ -27,7 +27,9 @@ package 第四版_第十一章_持有对象;
  * 
  * ---------------------------------------- <迭代器> ---------------------------------------------------
  * (9) SimpleIterator.java					: 简单的迭代器使用
+ * 
  * (10) CrossContainerIterator.java			: 验证了迭代器统一对容器的访问方式
+ * 
  * (11) ListIteration.java					: listIterator  的基本用法，继承自 Iterator
  * 
  * ---------------------------------------- <LinkedList> ---------------------------------------------------
@@ -35,6 +37,7 @@ package 第四版_第十一章_持有对象;
  * 
  * ---------------------------------------- <Stack> ---------------------------------------------------
  * (13) Stack.java							: 用 LinkedList 实现 Stack
+ * 
  * (14) StackCollision.java					: 同时使用  util 中的 Stack 和 java.util 中的 Stack (使用时添加包名 -> java.util.Stack<String> stack)
  * 
  * ---------------------------------------- <Set> ---------------------------------------------------
@@ -60,7 +63,8 @@ package 第四版_第十一章_持有对象;
  * 
  * (28) ForEachCollections.java	:
  * (29) IterableClass.java					: 任何 Iterable 类都可以使用 foreach : Iterable 接口包含了产生 Iterator 的 iterator() 方法
- * () EnvironmentVariables.java	: 
+ * (30) EnvironmentVariables.java			: 显示所有操作系统的环境变量
+ * (31) ArrayIsNotIterable.java				: 数组 不是 Iterable，无法自动转换
  * 
  * 
  * 

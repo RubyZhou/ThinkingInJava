@@ -16,5 +16,4 @@ public class EnvironmentVariables {
 		for (Map.Entry entry : System.getenv().entrySet())
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 	}
-
 }
