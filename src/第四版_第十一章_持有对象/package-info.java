@@ -56,7 +56,11 @@ package 第四版_第十一章_持有对象;
  * ---------------------------------------- <Collection 和 Iterator> ---------------------------------------------------
  * (25) InterfaceVsIterator.java			: 处理容器迭代： Iterator vs. 宽接口 Collection
  * (26) CollectionSequence.java				: 继承AbstractCollection 不如 使用Iterator的案例
+ * (27) NonCollectionSequence.java			: 
  * 
+ * (28) ForEachCollections.java	:
+ * (29) IterableClass.java					: 任何 Iterable 类都可以使用 foreach : Iterable 接口包含了产生 Iterator 的 iterator() 方法
+ * () EnvironmentVariables.java	: 
  * 
  * 
  * 
