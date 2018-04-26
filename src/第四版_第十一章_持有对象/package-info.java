@@ -67,6 +67,8 @@ package 第四版_第十一章_持有对象;
  * (31) ArrayIsNotIterable.java				: 数组 不是 Iterable，无法自动转换
  * 
  * 
+ * (32) AdapterMethodIdiom.java	: 
+ * 
  * 
  * 
  * 
