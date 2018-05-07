@@ -8,7 +8,7 @@ package 第四版_第十二章_通过异常处理错误;
  * Author	: zhouyf
  * Date		: 2018年4月26日 
  * Version	: 1.0 
- * Desc		: 异常与日志记录
+ * Desc		: 异常与日志记录 (使用 System.err 生成错误信息)
  * History	:
  */
 import java.util.logging.*;
@@ -37,7 +37,7 @@ class LoggingException extends Exception {
 		 * 			在构造器中接受一个 PrintWriter 对象
 		 * 			后续 PrintWriter 对象直接调用 toString 即可获取一个的 String
 		 */
-		printStackTrace(new PrintWriter(trace));	//重载 printStackTrace : 
+		printStackTrace(new PrintWriter(trace));	//重载 printStackTrace 
 		
 		/**
 		 * 【step 3】说明  : Logger.severe : 向 Logger 写入的最简单方式之一, 即直接调用与日志记录消息的级别相关联的方法
