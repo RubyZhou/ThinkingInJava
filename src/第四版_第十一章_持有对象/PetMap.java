@@ -1,16 +1,9 @@
 package 第四版_第十一章_持有对象;
 
-/**
- * Function	: PetMap.java
- * Author	: zhouyf
- * Date		: 2018年3月27日 
- * Version	: 1.0 
- * Desc		: Map的基本用法 : key为 String 类型
- * History	:
- */
-
-import 第四版_第十一章_持有对象_辅助类typeinfo.*;
 import java.util.*;
+
+import 第四版_辅助类.*;
+
 import static util.Print.*;
 
 public class PetMap {

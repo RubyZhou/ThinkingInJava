@@ -13,7 +13,7 @@ import static util.Print.*;
 
 import java.util.*;
 
-import 第四版_第十一章_持有对象_辅助类typeinfo.*;
+import 第四版_辅助类.*;
 
 
 public class SimpleIterator {

@@ -1,15 +1,7 @@
 package 第四版_第十一章_持有对象;
-/**
- * Function	: CollectionSequence.java
- * Author	: zhouyf
- * Date		: 2018年4月2日 
- * Version	: 1.0 
- * Desc		: 继承AbstractCollection 不如 使用Iterator的案例
- * 			继承抽象类 AbstractCollection 必须实现他的方法，并且不能再继承其他类，使用 Iterator 性价比更高
- * History	:
- */
-import 第四版_第十一章_持有对象_辅助类typeinfo.*;
 import java.util.*;
+
+import 第四版_辅助类.*;
 
 public class CollectionSequence extends AbstractCollection<Pet>{
 

@@ -9,4 +9,4 @@
  * Desc		: 
  * History	:
  */
-package 第四版_第十一章_持有对象_辅助类typeinfo;
+package 第四版_辅助类;

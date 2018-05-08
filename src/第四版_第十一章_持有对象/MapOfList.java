@@ -8,9 +8,10 @@ package 第四版_第十一章_持有对象;
  * History	:
  */
 
-import 第四版_第十一章_持有对象_辅助类typeinfo.*;
 import static util.Print.*;
 import java.util.*;
+
+import 第四版_辅助类.*;
 
 public class MapOfList {
 	

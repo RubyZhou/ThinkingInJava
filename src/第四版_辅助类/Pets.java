@@ -1,6 +1,6 @@
 //: typeinfo/pets/Pets.java
 // Facade to produce a default PetCreator.
-package 第四版_第十一章_持有对象_辅助类typeinfo;
+package 第四版_辅助类;
 import java.util.*;
 
 public class Pets {
