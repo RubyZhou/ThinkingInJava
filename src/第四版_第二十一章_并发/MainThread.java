@@ -8,7 +8,7 @@ package 第四版_第二十一章_并发;
  * Author	: zhouyf
  * Date		: 2018年5月9日 
  * Version	: 1.0 
- * Desc		: 用  main() 方式 单线程调度
+ * Desc		: 【单线程调度】 ：通过  main() 线程完成 LiftOff.run()
  * History	:
  */
 public class MainThread {
