@@ -21,7 +21,6 @@ class TaskWithResult implements Callable<String> {
 }
 
 
-
 public class CallableDemo {
 
 	/**
