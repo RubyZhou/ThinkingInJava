@@ -24,5 +24,6 @@ package 第四版_第二十一章_并发;
  * (7) SingleThreadExecutor.java	: 线程数为 1 的 FixedThreadPool : 序列化任务
  * 
  * (8) CallableDemo.java	: 使用 Callable() 获取任务返回值
- * () SleepingTask.java	: 带休眠的任务
+ * (9) SleepingTask.java	: 带休眠的任务
+ * (10) SimplePriorities.java	: 线程优先级
  */
