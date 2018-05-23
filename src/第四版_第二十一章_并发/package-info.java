@@ -23,7 +23,8 @@ package 第四版_第二十一章_并发;
  * (6) FixedThreadPool.java			: FixedThreadPool(int i) ：可以设置有限的线程池数量
  * (7) SingleThreadExecutor.java	: 线程数为 1 的 FixedThreadPool : 序列化任务
  * 
- * (8) CallableDemo.java	: 使用 Callable() 获取任务返回值
- * (9) SleepingTask.java	: 带休眠的任务
+ * (8) CallableDemo.java		: 使用 Callable() 获取任务返回值
+ * (9) SleepingTask.java		: 带休眠的任务
  * (10) SimplePriorities.java	: 线程优先级
+ * (11) SimpleDaemons.java		: 后台线程 <setDaemon(true)>
  */
