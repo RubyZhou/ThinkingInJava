@@ -13,7 +13,6 @@ package 第四版_第二十一章_并发;
  */
 
 import java.util.concurrent.*;
-import util.Print.*;
 
 public class SimpleDaemons implements Runnable{
 	

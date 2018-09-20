@@ -12,7 +12,7 @@ package 第四版_第十二章_通过异常处理错误;
  * History	:
  */
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 
 public class ExceptionMethods {
 

@@ -8,7 +8,7 @@ package 第四版_第十一章_持有对象;
  * History	:
  */
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 import java.util.*;
 
 import 第四版_辅助类.*;

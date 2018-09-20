@@ -18,5 +18,4 @@ public class Concatenation {
 		String s = "abc" + mango + "def" + "47";
 		System.out.println("s=" + s);
 	}
-
 }

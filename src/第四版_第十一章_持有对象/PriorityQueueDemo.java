@@ -9,7 +9,6 @@ package 第四版_第十一章_持有对象;
  */
 
 import java.util.*;
-import util.*;
 
 
 public class PriorityQueueDemo {

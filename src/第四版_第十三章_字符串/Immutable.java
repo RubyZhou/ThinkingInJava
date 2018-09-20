@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 第四版_第十三章_字符串;
 
@@ -11,30 +11,28 @@ package 第四版_第十三章_字符串;
  * Desc		: String对象不变性 : 使用 String 只会 copy 一份引用，不是通过地址传值 => 原 String不变
  * History	:
  */
-import static util.Print.*;
+
+import static 第四版_源码_util.Print.print;
 
 public class Immutable {
 
-	public static String upcase(String s) {
-		return s.toUpperCase();
-	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String q = "howdy";
-		print(q);
-		System.out.println("----------------");
-		String qq = upcase(q);
-		print(qq);
-		print(q);
-		System.out.println("----------------");
-		q = "HOWDY1";
-		print(q);
-		System.out.println("----------------");
-		
-	}
+    public static String upcase(String s) {
+        return s.toUpperCase();
+    }
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        String q = "howdy";
+        print(q);
+        System.out.println("----------------");
+        String qq = upcase(q);
+        print(qq);
+        print(q);
+        System.out.println("----------------");
+        q = "HOWDY1";
+        print(q);
+        System.out.println("----------------");
+
+    }
 
 }

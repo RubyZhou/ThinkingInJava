@@ -4,7 +4,7 @@ import java.util.*;
 
 import 第四版_辅助类.*;
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 
 public class PetMap {
 

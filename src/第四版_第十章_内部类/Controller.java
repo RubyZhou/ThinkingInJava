@@ -5,8 +5,6 @@ package 第四版_第十章_内部类;
 import java.util.ArrayList;
 import java.util.List;
 
-import util.*;
-
 /*
  * 事件调度框架:
  * 		(1) 有一个事件队列 List<Event> eventList

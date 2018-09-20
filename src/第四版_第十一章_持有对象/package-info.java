@@ -38,7 +38,7 @@ package 第四版_第十一章_持有对象;
  * ---------------------------------------- <Stack> ---------------------------------------------------
  * (13) Stack.java							: 用 LinkedList 实现 Stack
  * 
- * (14) StackCollision.java					: 同时使用  util 中的 Stack 和 java.util 中的 Stack (使用时添加包名 -> java.util.Stack<String> stack)
+ * (14) StackCollision.java					: 同时使用  第四版_源码_util 中的 Stack 和 java.第四版_源码_util 中的 Stack (使用时添加包名 -> java.第四版_源码_util.Stack<String> stack)
  * 
  * ---------------------------------------- <Set> ---------------------------------------------------
  * (15) SetOfInteger.java					: 使用 HashSet 存放 Integer (结果不排序？)

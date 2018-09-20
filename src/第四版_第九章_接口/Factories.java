@@ -1,6 +1,6 @@
 package 第四版_第九章_接口;
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 
 /*
  * 服务接口： 工厂间约定生产统一规格的服务接口

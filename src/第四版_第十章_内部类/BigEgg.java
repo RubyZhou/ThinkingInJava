@@ -1,6 +1,6 @@
 package 第四版_第十章_内部类;
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 
 class Egg {
 	private Yolk y;

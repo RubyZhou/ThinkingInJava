@@ -1,6 +1,6 @@
 package 第四版_第十一章_持有对象;
 
-import static util.Print.*;
+import static 第四版_源码_util.Print.*;
 
 /**
  * Function	: LinkedListFeatures.java
