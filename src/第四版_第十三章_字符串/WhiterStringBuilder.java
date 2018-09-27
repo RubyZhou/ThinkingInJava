@@ -37,5 +37,4 @@ public class WhiterStringBuilder {
 		// TODO Auto-generated method stub
 
 	}
-
 }
