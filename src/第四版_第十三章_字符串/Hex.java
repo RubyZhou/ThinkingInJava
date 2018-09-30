@@ -15,7 +15,7 @@ public class Hex {
 
         for (byte b : data) {
             if (n % 16 == 0)    result.append(String.format("%05X ", n));
-            result.append(String.format("%02X", n));
+            result.append(String.format("%02X ", n));
             n++;
             if (n % 16 == 0)    result.append("\n");
         }
@@ -25,7 +25,7 @@ public class Hex {
 
     public static void main(String[] args) throws Exception{
         if (args.length == 0)
-            System.out.println(format(BinaryFile.read("src\\第四版_第十三章_字符串\\Hex.java")));
+            System.out.println(format(BinaryFile.read("D:\\workspace\\IDEA\\ThinkingInJava\\bin\\第四版_第十三章_字符串\\Hex.class")));
         else
             System.out.println(format(BinaryFile.read(new File(args[0]))));
     }
