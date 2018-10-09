@@ -3,7 +3,7 @@ package 第四版_第十三章_字符串;
 import java.io.*;
 
 /**
- *  正则表达式 和 JAVAIO : 扫描输入
+ *  正则表达式 和 JAVAIO : 扫描输入 （JAVA_SE 1.4 版本，后续会介绍 1.5 中的 Scanner 类方法）
  */
 public class SimpleRead {
     public static BufferedReader input = new BufferedReader(new StringReader("Sir Robin of Camelot\n22 1.61803"));
