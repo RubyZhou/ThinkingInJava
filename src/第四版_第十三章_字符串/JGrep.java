@@ -1,7 +1,7 @@
 package 第四版_第十三章_字符串;
 
 // A very simple version of the "grep" program.
-// {Args: JGrep.java "\\b[Ssct]\\w+"}
+// {Args: dict.txt "\\b[Ssct]\\w+"}
 
 import 第四版_源码_util.TextFile;
 
@@ -27,6 +27,5 @@ public class JGrep {
                 System.out.println(index++ + ": " +
                         m.group() + ": " + m.start());
         }
-        System.out.println(" = ");
     }
 }
