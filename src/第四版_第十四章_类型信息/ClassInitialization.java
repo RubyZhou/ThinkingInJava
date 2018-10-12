@@ -35,7 +35,7 @@ public class ClassInitialization {
 
     public static void main(String[] args) throws Exception{
         Class initable = Initable.class;                // Does not trigger initialization:
-        System.out.println(">>> After creating Initable Initable ref");
+        System.out.println(">>> After creating Initable Initable ref");     // ref means ：references
         System.out.println(Initable.staticFinal);       // Does trigger initialization:
         System.out.println(Initable.staticFinal2);
         System.out.println(Initable2.staticNonFinal);   // Does trigger initialization:
