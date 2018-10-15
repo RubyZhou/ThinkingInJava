@@ -50,8 +50,10 @@ public class ToyTest {
 
         Class up = c.getSuperclass();
         Object obj = null;
+
         try {
             obj = up.newInstance();
+
         } catch (InstantiationException e) {
             print("Cannot instantiate");
             System.exit(1);
