@@ -26,11 +26,9 @@ public abstract class PetCreator {
     // TODO : 创建一个给定大小的 Pet[] 数组，并随机填充
     public Pet[] createArray(int size) {
         Pet[] result = new Pet[size];
-
         for (int i = 0; i < size; i++) {
             result[i] = randomPet();
         }
-
         return result;
     }
 
