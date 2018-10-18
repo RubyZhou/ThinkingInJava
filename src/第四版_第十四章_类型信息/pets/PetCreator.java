@@ -9,7 +9,7 @@ public abstract class PetCreator {
 
     private Random rand = new Random(47);
 
-    // 抽象方法 : 这里不指定返回值 List 的具体类型
+    // TODO : 抽象类，通过 types() 返回一个 List
     public abstract List<Class<? extends Pet>> types();
 
     // TODO : 随机生成一个 Pet
@@ -37,8 +37,6 @@ public abstract class PetCreator {
         ArrayList<Pet> result = new ArrayList<>();
         Collections.addAll(result, createArray(size));
         return result;
-
     }
-
 }
 
