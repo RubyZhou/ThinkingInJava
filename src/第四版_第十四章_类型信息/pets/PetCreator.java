@@ -3,7 +3,7 @@ package 第四版_第十四章_类型信息.pets;
 import java.util.*;
 
 /**
- *  辅助类 : 生成一个已填充的 Pet 数组 / 链表
+ *  抽象类 : 生成一个已填充的 Pet 数组 / 链表
  */
 public abstract class PetCreator {
 
