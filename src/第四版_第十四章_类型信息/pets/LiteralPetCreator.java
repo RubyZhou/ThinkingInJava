@@ -7,9 +7,9 @@ import java.util.*;
 
 /**
  *  使用字面常量
- *  Function : 用于随机生成一个 Pet
+ *  Function : 用于随机生成一个 list<Pet>
  */
-public class LiteralPetCreator extends PetCount {
+public class LiteralPetCreator extends PetCreator {
 
     /**
      *  变量 allTypes  的说明 :
