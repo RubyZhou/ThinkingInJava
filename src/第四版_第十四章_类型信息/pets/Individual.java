@@ -1,5 +1,11 @@
 package 第四版_第十四章_类型信息.pets;
 
+
+/**
+ *  Function       : 创建具名和不具名的对象
+ *      id()       : 返回唯一标识
+ *      toString() : 不具名的 Individual 只产生类型名
+ */
 public class Individual implements Comparable<Individual> {
 
     private static  long    counter = 0;
