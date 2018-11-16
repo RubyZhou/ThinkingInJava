@@ -1,5 +1,7 @@
 package 第四版_第十一章_持有对象;
 
+import 第四版_第十四章_类型信息.pets.*;
+
 import static 第四版_源码_util.Print.*;
 
 /**
@@ -19,7 +21,7 @@ import static 第四版_源码_util.Print.*;
 
 import java.util.*;
 
-import 第四版_辅助类.*;
+
 
 public class ListFeature {
 

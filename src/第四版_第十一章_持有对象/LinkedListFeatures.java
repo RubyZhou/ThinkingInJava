@@ -1,5 +1,10 @@
 package 第四版_第十一章_持有对象;
 
+import 第四版_第十四章_类型信息.pets.Hamster;
+import 第四版_第十四章_类型信息.pets.Pet;
+import 第四版_第十四章_类型信息.pets.Pets;
+import 第四版_第十四章_类型信息.pets.Rat;
+
 import static 第四版_源码_util.Print.*;
 
 /**
@@ -13,7 +18,6 @@ import static 第四版_源码_util.Print.*;
 
 import java.util.*;
 
-import 第四版_辅助类.*;
 
 
 public class LinkedListFeatures {

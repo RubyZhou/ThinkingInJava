@@ -1,8 +1,12 @@
 package 第四版_第十一章_持有对象;
 
+import 第四版_第十四章_类型信息.pets.Cat;
+import 第四版_第十四章_类型信息.pets.Dog;
+import 第四版_第十四章_类型信息.pets.Hamster;
+import 第四版_第十四章_类型信息.pets.Pet;
+
 import java.util.*;
 
-import 第四版_辅助类.*;
 
 import static 第四版_源码_util.Print.*;
 

@@ -1,8 +1,6 @@
 package 第四版_第十四章_类型信息;
 
 
-import 第四版_辅助类.Dog;
-
 /**
  *  Class类 : cast() 即强制类型转换
  */

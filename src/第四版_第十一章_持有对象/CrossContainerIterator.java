@@ -11,7 +11,9 @@ package 第四版_第十一章_持有对象;
 
 import java.util.*;
 
-import 第四版_辅助类.*;
+import 第四版_第十四章_类型信息.pets.Pet;
+import 第四版_第十四章_类型信息.pets.Pets;
+
 
 
 public class CrossContainerIterator {
