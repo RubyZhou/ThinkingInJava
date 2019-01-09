@@ -4,7 +4,6 @@ package Fourth_util;
 import 第四版_源码_util.PPrint;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,7 +13,7 @@ import java.util.regex.Pattern;
 /**
  *  所属章节 : Chapter18_IO
  *
- *  目录工具
+ *  目录工具 ( 提供File[] / TreeInfo 两种形式来按regex显示某个目录中的元素 )
  *
  */
 public final class Directory {
@@ -37,6 +36,7 @@ public final class Directory {
     }
 
     // 内部类 : TreeInfo
+    // Desc : TreeInfo 是一个同时分类 file 和 dir 的类
     // A two-tuple for returning a pair of objects
     public static class TreeInfo implements Iterable<File> {
         public List<File>   files   = new ArrayList<File>();
