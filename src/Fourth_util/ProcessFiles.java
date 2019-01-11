@@ -22,7 +22,7 @@ public class ProcessFiles {
         this.ext        = ext;
     }
 
-    // (调度) 遍历 args, 调用 processDirectoryTree() 处理目录,
+    // (调度) 遍历 args, 调用 processDirectoryTree() 处理目录 / 直接调用 process() 执行
     public void     start(String args[]) {
         try {
             if (args.length == 0) {                     // <1> 未传入参数 : 从 "." 目录开始执行
