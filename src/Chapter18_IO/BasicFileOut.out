@@ -4,37 +4,35 @@
 4: 
 5: 
 6: /**
-7:  *
+7:  *  基本文件的输出 ( Reader -> Writer)
 8:  */
 9: public class BasicFileOutput {
 10: 
 11:     static String file = "src\\Chapter18_IO\\BasicFileOut.out";
 12: 
 13:     public static void main(String[] args) throws IOException {
-14: 
-15:         // 定义 Reader
-16:         BufferedReader in = new BufferedReader(
-17:                 new StringReader(
-18:                         BufferedInputFile.read("src\\Chapter18_IO\\BasicFileOutput.java")
-19:                 )
-20:         );
-21: 
-22:         // 定义 Writer
-23:         PrintWriter out = new PrintWriter(
-24:                 new BufferedWriter(
-25:                         new FileWriter(file)
-26:                 )
-27:         );
-28: 
-29:         int lineCount = 1;  // 打印行号用
-30:         String  s;
-31: 
-32:         while ((s = in.readLine()) != null)
-33:             out.println(lineCount++ + ": " + s);
-34: 
-35:         // 如果不关闭, 缓冲区不会刷新清空
-36:         out.close();
-37: 
-38:         System.out.println(BufferedInputFile.read(file));
-39:     }
-40: }
+14:         // 定义 Reader
+15:         BufferedReader in = new BufferedReader(
+16:                 new StringReader(
+17:                         BufferedInputFile.read("src\\Chapter18_IO\\BasicFileOutput.java")
+18:                 )
+19:         );
+20:         // 定义 Writer ：FileWriter 装饰成 PrintWriter
+21:         PrintWriter out = new PrintWriter(
+22:                 new BufferedWriter(
+23:                         new FileWriter(file)
+24:                 )
+25:         );
+26: 
+27:         int lineCount = 1;  // 打印行号用
+28:         String  s;
+29: 
+30:         while ((s = in.readLine()) != null)
+31:             out.println(lineCount++ + ": " + s);
+32: 
+33:         // 如果不关闭, 缓冲区不会刷新清空
+34:         out.close();
+35: 
+36:         System.out.println(BufferedInputFile.read(file));
+37:     }
+38: }

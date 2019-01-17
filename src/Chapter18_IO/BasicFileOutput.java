@@ -4,7 +4,7 @@ import java.io.*;
 
 
 /**
- *  文本文件输出的快捷方式 ( Reader -> Writer)
+ *  基本文件的输出 ( Reader -> Writer)
  */
 public class BasicFileOutput {
 
