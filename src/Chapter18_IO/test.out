@@ -1,0 +1,42 @@
+package Chapter18_IO;
+
+
+import java.io.*;
+
+/**
+ *  Demonstrates standard I/O redirection.
+ */
+public class Redirecting {
+    public static void main(String[] args) throws IOException {
+
+        PrintStream console = System.out;
+
+        BufferedInputStream in = new BufferedInputStream(
+                new FileInputStream("src\\Chapter18_IO\\Redirecting.java")
+        );
+
+        PrintStream out = new PrintStream(
+                new BufferedOutputStream(
+                        new FileOutputStream("src\\Chapter18_IO\\test.out")
+                )
+        );
+
+        // 设置重定向 I/O
+        System.setIn(in);
+        System.setOut(out);
+        System.setErr(out);
+
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in)
+        );
+
+        String  s;
+        while ((s = br.readLine()) != null) {
+            System.out.println(s);
+        }
+
+        out.close();
+        System.setOut(console);
+
+    }
+}
