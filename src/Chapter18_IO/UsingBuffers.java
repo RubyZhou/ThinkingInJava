@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 
 /**
- *  对 CharBuffer 中的字符进行 scramble 和 unscramble
+ *  操作 Buffer 的四个索引, 对 CharBuffer 中的字符进行 scramble 和 unscramble
  */
 
 public class UsingBuffers {
@@ -15,6 +15,17 @@ public class UsingBuffers {
             char c2 = buffer.get();
             buffer.reset();
             buffer.put(c2).put(c1);
+        }
+    }
+
+    private static void symmetricScramble1(CharBuffer buffer) {
+        while (buffer.hasRemaining()) {
+            buffer.mark();
+            char c1 = buffer.get();
+            char c2 = buffer.get();
+            char c3 = buffer.get();
+            buffer.reset();
+            buffer.put(c3).put(c2).put(c1);
         }
     }
 
@@ -29,6 +40,12 @@ public class UsingBuffers {
         System.out.println(cb.rewind());
         // 译码
         symmetricScramble(cb);
+        System.out.println(cb.rewind());
+
+        // 练习
+        symmetricScramble1(cb);
+        System.out.println(cb.rewind());
+        symmetricScramble1(cb);
         System.out.println(cb.rewind());
     }
 }
