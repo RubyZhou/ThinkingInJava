@@ -7,10 +7,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- *  进程控制
+ * 进程控制
  */
 public class OSExecute {
-    public static void  command(String command) {
+    public static void command(String command) {
         boolean err = false;
         try {
             System.out.println("OSExecute >>>>");
@@ -21,7 +21,7 @@ public class OSExecute {
             BufferedReader result = new BufferedReader(
                     new InputStreamReader(process.getInputStream())
             );
-            String  s;
+            String s;
             while ((s = result.readLine()) != null) {
                 System.out.println(s);
             }
@@ -33,8 +33,7 @@ public class OSExecute {
                 System.out.println(s);
                 err = true;
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             if (!command.startsWith("CMD /C"))
                 command("CMD /C " + command);
             else

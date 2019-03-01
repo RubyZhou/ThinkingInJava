@@ -8,12 +8,12 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 
 /**
- *  使用 Bytebuffer.asCharBuffer 一次输出多条数据。(PS : 默认通过 Bytebuffer.get() 是一次读取一个字节)
+ * 使用 Bytebuffer.asCharBuffer 一次输出多条数据。(PS : 默认通过 Bytebuffer.get() 是一次读取一个字节)
  */
 public class BufferToText {
     private static final int SIZE = 1024;
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         /*------------------------------ GROUP I --------------------------------------------*/
         // (1) 写文件
         FileChannel fc = new FileOutputStream("src\\Chapter18_IO\\NewIOdata2.txt").getChannel();

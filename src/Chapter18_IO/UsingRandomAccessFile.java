@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- *  读写随机访问文件（RandomAccessFile）
+ * 读写随机访问文件（RandomAccessFile）
  */
 public class UsingRandomAccessFile {
     static String file = "src\\Chapter18_IO\\rtest.dat";
-    static double PAI  = 3.14159;
+    static double PAI = 3.14159;
 
     static void display() throws IOException {
         //

@@ -4,7 +4,7 @@ package Chapter18_IO;
 import java.io.*;
 
 /**
- *  存储和恢复数据 ：保证在任何平台上读写出来的结果是一致的。
+ * 存储和恢复数据 ：保证在任何平台上读写出来的结果是一致的。
  */
 public class StoringAndRecoveringData {
 

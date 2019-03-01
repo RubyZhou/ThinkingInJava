@@ -7,12 +7,12 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- *  从流中产生通道
+ * 从流中产生通道
  */
 public class GetChannel {
     private static final int BSIZE = 1024;
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         // 写文件
         FileChannel fc = new FileOutputStream("src\\Chapter18_IO\\NewIOdata.txt").getChannel();

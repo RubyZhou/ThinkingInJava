@@ -1,7 +1,7 @@
 package Chapter18_IO;
 
 /**
- *  高位优先 & 低位优先
+ * 高位优先 & 低位优先
  */
 
 import java.nio.ByteBuffer;

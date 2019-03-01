@@ -7,7 +7,7 @@ import static Fourth_util.Print.print;
 import static Fourth_util.Print.printnb;
 
 /**
- *  在 Buffer 中操作基本类型
+ * 在 Buffer 中操作基本类型
  */
 public class GetData {
     private static final int SIZE = 1024;
@@ -35,7 +35,7 @@ public class GetData {
         bb.rewind();
 
         System.out.println("Store and read a short:");
-        bb.asShortBuffer().put((short)471142);
+        bb.asShortBuffer().put((short) 471142);
         print(bb.getShort());
         bb.rewind();
 

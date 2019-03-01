@@ -17,8 +17,7 @@ public class FormattedMemoryInput {
                                     BufferedInputFile.read("src\\Chapter18_IO\\FormattedMemoryInput.java").getBytes()));
             while (true)
                 System.out.print((char) in.readByte());
-        }
-        catch (EOFException e) {
+        } catch (EOFException e) {
             System.err.println("End of stream.");
         }
     }

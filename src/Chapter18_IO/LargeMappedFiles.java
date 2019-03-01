@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 import static Fourth_util.Print.printnb;
 
 /**
- *  内存映射文件
+ * 内存映射文件
  */
 public class LargeMappedFiles {
     static int length = 0x8FFFFFF;  // 文件大小 : 128 MB, 只访问文件的一小部分
@@ -18,11 +18,11 @@ public class LargeMappedFiles {
                 new RandomAccessFile("src\\Chapter18_IO\\test.dat", "rw").getChannel()
                         .map(FileChannel.MapMode.READ_WRITE, 0, length);
         for (int i = 0; i < length; i++) {
-            out.put((byte)'x');
+            out.put((byte) 'x');
         }
         System.out.println("Finished writing");
-        for (int i = length/2; i < length/2 + 6; i++) {
-            printnb((char)out.get(i));
+        for (int i = length / 2; i < length / 2 + 6; i++) {
+            printnb((char) out.get(i));
         }
     }
 }

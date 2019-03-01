@@ -4,7 +4,7 @@ import java.io.*;
 
 
 /**
- *  基本文件的输出 ( Reader -> Writer)
+ * 基本文件的输出 ( Reader -> Writer)
  */
 public class BasicFileOutput {
 
@@ -25,7 +25,7 @@ public class BasicFileOutput {
         );
 
         int lineCount = 1;  // 打印行号用
-        String  s;
+        String s;
 
         while ((s = in.readLine()) != null)
             out.println(lineCount++ + ": " + s);

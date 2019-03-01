@@ -4,7 +4,7 @@ package Chapter18_IO;
 import java.io.*;
 
 /**
- *  标准I/O 重定向
+ * 标准I/O 重定向
  */
 public class Redirecting {
     public static void main(String[] args) throws IOException {
@@ -33,7 +33,7 @@ public class Redirecting {
         );
 
         // 写新的标准输出(文件)
-        String  s;
+        String s;
         while ((s = br.readLine()) != null) {
             System.out.println(s);
         }

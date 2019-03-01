@@ -8,7 +8,7 @@ import java.util.SortedMap;
 import static Fourth_util.Print.printnb;
 
 /**
- *  Charset 类 : 将数据编码成不同类型的字符集的一个工具
+ * Charset 类 : 将数据编码成不同类型的字符集的一个工具
  */
 public class AvailableCharSets {
 

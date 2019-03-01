@@ -1,7 +1,7 @@
 package Chapter18_IO;
 
 /**
- *  进程控制
+ * 进程控制
  */
 public class OSExecuteDemo {
     public static void main(String[] args) {

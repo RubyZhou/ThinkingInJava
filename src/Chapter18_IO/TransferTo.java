@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.nio.channels.FileChannel;
 
 /**
- *  连接两个通道(transferTo / transferFrom), 进行文件复制
+ * 连接两个通道(transferTo / transferFrom), 进行文件复制
  */
 public class TransferTo {
     public static void main(String[] args) throws Exception {
@@ -16,7 +16,7 @@ public class TransferTo {
         }
         // 定义输入输出通道
         FileChannel
-                in  = new FileInputStream(args[0]).getChannel(),
+                in = new FileInputStream(args[0]).getChannel(),
                 out = new FileOutputStream(args[1]).getChannel();
 
         in.transferTo(0, in.size(), out);

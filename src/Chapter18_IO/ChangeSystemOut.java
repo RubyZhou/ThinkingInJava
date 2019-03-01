@@ -4,7 +4,7 @@ package Chapter18_IO;
 import java.io.PrintWriter;
 
 /**
- *  Turn System.out into a PrintWriter.
+ * Turn System.out into a PrintWriter.
  */
 public class ChangeSystemOut {
     public static void main(String[] args) {

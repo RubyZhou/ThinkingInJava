@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.StringReader;
 
 /**
- *  文件到内存后使用()
+ * 文件到内存后使用()
  */
 public class MemoryInput {
 
@@ -14,7 +14,7 @@ public class MemoryInput {
         int c;
 
         while ((c = in.read()) != -1) {
-            System.out.print((char)c);  // 必须强制转换 : read() 会以int类型返回(ASCII码)
+            System.out.print((char) c);  // 必须强制转换 : read() 会以int类型返回(ASCII码)
         }
     }
 }

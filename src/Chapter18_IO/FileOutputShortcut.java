@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 
 /**
- *  文本文件输出的快捷方式 (PrintWriter)
+ * 文本文件输出的快捷方式 (PrintWriter)
  */
 public class FileOutputShortcut {
     static String file = "src\\Chapter18_IO\\FileOutputShortcut.out";
@@ -25,7 +25,7 @@ public class FileOutputShortcut {
         int lineCount = 1;
         String s;
 
-        while((s = in.readLine()) != null )
+        while ((s = in.readLine()) != null)
             out.println(lineCount++ + ": " + s);
 
         out.close();

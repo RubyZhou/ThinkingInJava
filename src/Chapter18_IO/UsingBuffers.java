@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 
 /**
- *  操作 Buffer 的四个索引, 对 CharBuffer 中的字符进行 scramble 和 unscramble
+ * 操作 Buffer 的四个索引, 对 CharBuffer 中的字符进行 scramble 和 unscramble
  */
 
 public class UsingBuffers {

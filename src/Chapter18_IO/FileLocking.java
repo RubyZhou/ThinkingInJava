@@ -7,7 +7,7 @@ import java.nio.channels.FileLock;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  文件加锁
+ * 文件加锁
  */
 public class FileLocking {
     public static void main(String[] args) throws IOException, InterruptedException {

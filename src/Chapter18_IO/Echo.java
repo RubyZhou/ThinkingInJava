@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- *  从 System.in 读取数据
+ * 从 System.in 读取数据
  */
 public class Echo {
 
@@ -17,7 +17,7 @@ public class Echo {
 
         String s;
 
-        while ( null != (s = stdin.readLine()) && 0 != s.length() ) {
+        while (null != (s = stdin.readLine()) && 0 != s.length()) {
             System.out.println(s);
         }
     }
