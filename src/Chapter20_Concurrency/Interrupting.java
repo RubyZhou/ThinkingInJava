@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  在 Executor 上使用基本的 interrupt() 方法
+ *  测试中断 3 种类型的阻塞。 只有 sleep() 阻塞才能被 cancel() 中断
  */
 
 // sleep 阻塞
@@ -85,9 +85,10 @@ public class Interrupting {
 
         Future<?> f = exec.submit(r);
         System.out.println("Interrupting.test() : start " + r.getClass().getName());
-        TimeUnit.MILLISECONDS.sleep(100);
 
+        TimeUnit.MILLISECONDS.sleep(100);
         System.out.println("Interrupting.test() : Interrupting " + r.getClass().getName());
+
         // 发起中断.
         /*---------------------------------------------------*/
         f.cancel(true);
@@ -96,9 +97,14 @@ public class Interrupting {
     }
 
     public static void main(String[] args) throws Exception{
-        /*---------------------------------------------------*/
+
+        System.out.println("--------------------------[SleepBlocked]--------------------------");
         test(new SleepBlocked());
-        /*---------------------------------------------------*/
+        System.out.println("--------------------------[IOBlocked]--------------------------");
+        test(new IOBlocked(System.in));
+        System.out.println("--------------------------[SynchronizedBlocked]--------------------------");
+        test(new SynchronizedBlocked());
+        System.out.println("---------------------------------------------------------");
         System.out.println("Main : Aborting with System.exit(0)");
         System.exit(0); // ... since last 2 interrupts failed
     }
