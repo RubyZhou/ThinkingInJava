@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  测试中断 3 种类型的阻塞。 只有 sleep() 阻塞才能被 cancel() 中断
+ *  测试中断 3 种类型的阻塞。 cancel() 只能中断 sleep阻塞. 对于 I/O阻塞 和 同步锁阻塞 无效.
  */
 
 // sleep 阻塞
@@ -17,12 +17,13 @@ class SleepBlocked implements Runnable {
     @Override
     public void run() {
         try {
+            System.out.println("Start sleeping...");
             TimeUnit.SECONDS.sleep(100);
         }
         catch (InterruptedException e) {
-            System.out.println("SleepBlocked : InterruptedException!");
+            System.out.println("InterruptedException!（SleepBlocked）");
         }
-        System.out.println("SleepBlocked : Exiting SleepBlocked.run().");
+        System.out.println("Exiting SleepBlocked.run().");
     }
 }
 
@@ -37,7 +38,7 @@ class IOBlocked implements Runnable {
     @Override
     public void run() {
         try {
-            System.out.println("Waiting for read() : ");
+            System.out.println("Waiting for read()");
             in.read();
         }
         catch (IOException e) {
@@ -48,6 +49,7 @@ class IOBlocked implements Runnable {
                 throw new RuntimeException();
             }
         }
+        System.out.println("Exiting IOBlocked.run()");
     }
 }
 
@@ -71,7 +73,7 @@ class SynchronizedBlocked implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Trying to call f()");
+        System.out.println("Trying to call [synchronized]f()");
         f();
         System.out.println("Exiting SynchronizedBlocked.run()");
     }
@@ -80,32 +82,28 @@ class SynchronizedBlocked implements Runnable {
 public class Interrupting {
     private static ExecutorService exec = Executors.newCachedThreadPool();
 
-    // 用 submit() 拉起任务后, 等100毫秒, 再中断该任务.
     static void test(Runnable r) throws InterruptedException {
 
+        System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        /* 1. 启动线程池 */
+        System.out.println("    start " + r.getClass().getName());
         Future<?> f = exec.submit(r);
-        System.out.println("Interrupting.test() : start " + r.getClass().getName());
-
         TimeUnit.MILLISECONDS.sleep(100);
-        System.out.println("Interrupting.test() : Interrupting " + r.getClass().getName());
 
-        // 发起中断.
-        /*---------------------------------------------------*/
+        /* 2. 向线程发送 cancel() 请求 */
+        System.out.println("    Interrupting " + r.getClass().getName());
         f.cancel(true);
-        /*---------------------------------------------------*/
-        System.out.println("Interrupting.test() : Interrupt sent to " + r.getClass().getName());
+        System.out.println("    Interrupt sent to " + r.getClass().getName());
     }
 
     public static void main(String[] args) throws Exception{
 
-        System.out.println("--------------------------[SleepBlocked]--------------------------");
         test(new SleepBlocked());
-        System.out.println("--------------------------[IOBlocked]--------------------------");
         test(new IOBlocked(System.in));
-        System.out.println("--------------------------[SynchronizedBlocked]--------------------------");
         test(new SynchronizedBlocked());
-        System.out.println("---------------------------------------------------------");
-        System.out.println("Main : Aborting with System.exit(0)");
-        System.exit(0); // ... since last 2 interrupts failed
+
+        // main线程 兜底强制中断.
+        System.out.println("\n[Main] Aborting with System.exit(0).");
+        System.exit(0);     // ... since last 2 interrupts failed
     }
 }
